@@ -22,7 +22,15 @@
     </header>
     <main>
         <h1>home</h1>
+        
+        <h2>{{$name}}</h2>
 
+        <ul>
+            @foreach ($informations as $info)
+                <li> {{$info}} </li>
+            @endforeach
+        </ul>
+        
     </main>
 </body>
 </html>
